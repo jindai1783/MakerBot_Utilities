@@ -1,7 +1,6 @@
 var Github = require('github-api');
-var fs = require('fs');
 var github = new Github({
-  username: "makersbot",
+  username: "makerbots",
   password: '1qwerty',
   auth: "basic"
 });
@@ -13,16 +12,23 @@ function MakersGitHub(){
 MakersGitHub.prototype.readFileInfo = function(fileName, callback) {
   
   this.repo.read('master', fileName, function(err, data) {
+    if (err) throw err;
+    console.log(data);
     callback(data);
   });
 };
 
-MakersGitHub.prototype.readFileInfoSync = function(file) {
-  var data = null;
-  this.repo.contents('master', file, function(err, contents) {console.log(contents); return content}, sync=true);
+// MakersGitHub.prototype.readFileInfoSync ftion(file) {
+//   var data = null;
+//   this.repo.contents('master', file, function(err, contents) {console.log(contents); return content}, sync=true);
   
-  data = contents;
-  return data;
-};
+//   data = contents;
+//   return data;
+// };
 
 module.exports = MakersGitHub;
+
+// var makers = new MakersGitHub();
+// makers.readFileInfo('.gitignore', function() {
+//   console.log('hello')
+// });

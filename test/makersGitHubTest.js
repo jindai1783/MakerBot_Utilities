@@ -8,15 +8,16 @@ describe('Makers GitHub', function() {
   it('should pass', function() {
     var makers = new MakersGitHub();
     expect(makers.repo).to.not.equal(null);
+
   });
 
-  it('should read a file from Makers GitHub', function() {
+  it('should read a file from Makers GitHub', function(done) {
     var makers = new MakersGitHub();
-
     makers.readFileInfo('.gitignore', function(data) {
-      expect(data).to.contain('Store');
+      console.log(data);
       done();
-    })
+    });
+    // expect().to.contain('asdfasdf');
   });
 
 
