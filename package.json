@@ -1,0 +1,27 @@
+{
+  "name": "MakerBot",
+  "version": "1.0.0",
+  "description": "A bot for the Makers Academy slack channel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobmitchinson/MakerBot.git"
+  },
+  "author": "Clint, Jacob, Danielle, Jin, Ptolemy.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobmitchinson/MakerBot/issues"
+  },
+  "homepage": "https://github.com/jacobmitchinson/MakerBot",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "jshint": "^2.6.0"
+  },
+  "dependencies": {
+    "github-api": "^0.10.3",
+    "node-slackbot": "0.0.6"
+  }
+}
