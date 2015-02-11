@@ -20,8 +20,8 @@ describe('Makers GitHub', function() {
       //-------------------------------------------------
       //<1> expect sitting inside this callback, can work
       //-------------------------------------------------
-      expect(expectedData).to.contain('DS');
 
+      expect(expectedData).to.contain('DS');
       done();
     });
   });
