@@ -1,8 +1,15 @@
-# MakerBot
+# MakerBot Utilities
+
+## Introduction
+
+This repository is [MakerBot] sub-team's ([Dan] and me) initial exploration of adding functionalities to [MakerBot] which uses GitHub API.
+
+[MakerBot]: https://github.com/jindai1783/MakerBot
+[Dan]: https://github.com/ddemkiw
 
 ## Tutorial
 
-There was a major bug in async mocha testing at a stage. This is resolved, and the solution is written here in the test file and main file:
+There was a major bug in async mocha testing at a stage. This is resolved, and the solution is written done here for future reference:
 
 ```javascript
 var chai = require('chai');
@@ -75,4 +82,4 @@ MakersGitHub.prototype.readFileInfo = function(fileName, callback) {
 };
 
 module.exports = MakersGitHub;
-```g
+```
